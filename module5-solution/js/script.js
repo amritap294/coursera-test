@@ -41,7 +41,7 @@ var showLoading = function (selector) {
 var insertProperty = function (string, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
   string = string
-    .replace(new RegExp(propToReplace, "g"), propValue);
+    replace(new RegExp(propToReplace, "g"), propValue);
   return string;
 };
 
